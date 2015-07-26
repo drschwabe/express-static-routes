@@ -7,8 +7,13 @@ var _ = require('underscore'),
 //If there are .html pages with no routes, this module will define them a route now.
 module.exports = function(app, staticFolder, ignores) {
 
-  //First get a collection of all existing routes:
-  var existingRoutes = _.pluck(app._router.stack, 'path')
+  //First get a collection of all existing routes...
+  var existingRoutes
+  if(app._router) {
+    existingRoutes = _.pluck(app._router.stack, 'path')    
+  } else {
+    existingRoutes = [] //(no existing routes)
+  }
 
   //Now, get a collection of all directories:
   file.walkSync(staticFolder, function(dirPath, dirs, files) {
