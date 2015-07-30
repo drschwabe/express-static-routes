@@ -1,9 +1,23 @@
 {
   "name": "express-static-route-generator",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "main": "esrg.js",
   "dependencies": {
     "file": "^0.2.2",
     "underscore": "^1.8.3"
-  }
+  }, 
+  "author": {
+    "name": "Derrick Schwabe",
+    "email": "admin@nerdbusiness.com"
+  },
+ "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drschwabe/express-static-route-generator"
+  },
+  "keywords": [
+    "express",
+    "static",
+    "route"
+  ]
 }
