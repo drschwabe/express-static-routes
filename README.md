@@ -1,7 +1,7 @@
 
 ## express static route generator
 
-Defines a route for any .html pages that doesn't already have one.
+Defines a route for any .html pages that don't already have one.
 
 Useful if you want to make server side variables available to otherwise static pages, or simply to enable a cleaner route to all of your static pages (ie- "html/about-us.html" becomes "/about" )
 
