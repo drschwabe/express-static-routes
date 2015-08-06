@@ -3,14 +3,15 @@
   "version": "0.0.1",
   "main": "esrg.js",
   "dependencies": {
+    "ejs": "^2.3.3",
     "file": "^0.2.2",
     "underscore": "^1.8.3"
-  }, 
+  },
   "author": {
     "name": "Derrick Schwabe",
     "email": "admin@nerdbusiness.com"
   },
- "license": "MIT",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/drschwabe/express-static-route-generator"
