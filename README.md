@@ -1,13 +1,15 @@
 
-## express static route generator
+## express static routes
 
-Defines a route for any .html pages that don't already have one.
+Creates a route for any .html pages that don't already have one.
 
-Useful if you want to make server side variables available to otherwise static pages, or simply to enable a cleaner route to all of your static pages (ie- "html/about-us.html" becomes "/about" )
+Useful if you want to make server side variables available to otherwise static pages, or simply to enable a cleaner route to all of your static pages (ie- "about-us.html" becomes available at "/about" )
 
 #### Install
 ```
-npm install express-static-route-generator
+npm install express-static-routes
+
+var esr = require('express-static-routes')
 ```
 
 #### Usage
@@ -15,12 +17,14 @@ npm install express-static-route-generator
 Add this line, in your express app, after your existing routse are defined (if any).
 
 ```
-esrg(app, 'html')
+esr(app, 'html')
 ```
 
 Ex: now html/about-us.html has the public route "/about-us"
+
 Accommodates for subdirectories too, so html/articles/why-sky-blue.html will have the route "/articles/why-sky-blue".
-And accommodates for indexes so html/articles/index.html will have the route "/articles"
+
+And also accommodates for indexes so html/articles/index.html will have the route "/articles"
 
 ##### License
 

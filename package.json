@@ -1,12 +1,15 @@
 {
-  "name": "express-static-route-generator",
+  "name": "express-static-routes",
   "version": "0.0.1",
-  "main": "esrg.js",
+  "main": "express-static-routes.js",
+  "description": "Creates a route for any .html pages that don't already have one.",  
   "dependencies": {
     "ejs": "^2.3.3",
     "file": "^0.2.2",
+    "path": "^0.12.7",
     "underscore": "^1.8.3"
   },
+  "homepage": "https://github.com/drschwabe/express-static-routes",          
   "author": {
     "name": "Derrick Schwabe",
     "email": "admin@nerdbusiness.com"
@@ -14,11 +17,13 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/drschwabe/express-static-route-generator"
+    "url": "https://github.com/drschwabe/express-static-routes"
   },
   "keywords": [
     "express",
     "static",
-    "route"
+    "route", 
+    "directory", 
+    "ejs"
   ]
 }
