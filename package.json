@@ -1,10 +1,9 @@
 {
   "name": "express-static-routes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "express-static-routes.js",
   "description": "Creates a route for any .html pages that don't already have one.",  
   "dependencies": {
-    "ejs": "2.5.1",
     "file": "^0.2.2",
     "path": "^0.12.7",
     "underscore": "^1.8.3"
@@ -23,7 +22,6 @@
     "express",
     "static",
     "route", 
-    "directory", 
-    "ejs"
+    "directory"
   ]
 }

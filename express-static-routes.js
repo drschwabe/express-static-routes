@@ -3,27 +3,13 @@
 var _ = require('underscore'), 
     fs = require('fs'), 
     file = require('file'), 
-    ejs = require('ejs'), 
-    path = require('path'), 
-    //Get the path back to the project (which is calling this module): 
-    appDir = path.dirname(require.main.filename)
+    path = require('path')
 
 module.exports = function(app, staticFolder, ignores) {
 
   //If no static folder was provided, assume a folder called "html": 
   if(!staticFolder) staticFolder = 'html'
   //TODO: check if folder exists, otherwise throw an error.
-
-  //If no template engine specified, specify it now: 
-  if(_.isEmpty(app.engines)) {
-    //Enable EJS template engine:
-    app.engine('.html', require('ejs').__express)
-    //Set EJS Views path to same dir as static HTML...
-    app.set('views', appDir + '/html')
-    //And set the extension to HTML too!
-    //(now we can serve both views & static from /html folder)
-    app.set('view engine', 'html')
-  }
 
   //First get a collection of all existing routes...
   var existingRoutes
